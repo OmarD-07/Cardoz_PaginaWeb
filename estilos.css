@@ -1,0 +1,863 @@
+/* ================================================
+   CARDOZ — Panadería Artesanal
+   estilos.css
+   ================================================ */
+
+/* --- Fuentes --- */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Lato:wght@300;400;600;700&display=swap');
+
+/* --- Reset base --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* --- Body --- */
+body {
+    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FDFBF7;
+    color: #2D1A10;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* --- Separador --- */
+hr {
+    border: 0;
+    height: 1px;
+    background: #EADBC8;
+    margin: 40px auto;
+    width: 90%;
+}
+
+/* --- Imágenes --- */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    margin: 15px auto;
+}
+
+/* --- Contenedor principal --- */
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+/* ================================================
+   HEADER & NAVEGACIÓN
+   ================================================ */
+
+header {
+    background-color: #FFFFFF;
+    padding: 18px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #6F4E37;
+    box-shadow: 0 2px 12px rgba(111, 78, 55, 0.1);
+}
+
+header h1 {
+    color: #6F4E37;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #2D1A10;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+}
+
+header nav a:hover {
+    color: #6F4E37;
+    border-bottom: 2px solid #6F4E37;
+}
+
+/* Hamburger (mobile) — oculto por defecto en desktop */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 26px;
+    color: #6F4E37;
+    cursor: pointer;
+    padding: 5px;
+    box-shadow: none;
+    transform: none;
+}
+
+.menu-toggle:hover {
+    background: none;
+    transform: none;
+}
+
+/* ================================================
+   BOTONES
+   ================================================ */
+
+button {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    border: none;
+    padding: 11px 24px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #2D1A10;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(45, 26, 16, 0.25);
+}
+
+/* ================================================
+   PÁGINA PRINCIPAL — HERO
+   ================================================ */
+
+#inicio {
+    text-align: center;
+    padding: 30px 0 10px 0;
+}
+
+#inicio h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 42px;
+    font-weight: 800;
+    color: #6F4E37;
+    margin-bottom: 14px;
+    line-height: 1.2;
+}
+
+#inicio p {
+    font-size: 18px;
+    color: #55443C;
+    margin-bottom: 28px;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inicio img {
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(111, 78, 55, 0.2);
+    max-width: 700px;
+    width: 100%;
+}
+
+#inicio a {
+    display: inline-block;
+    background-color: #6F4E37;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 13px 28px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 8px;
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+#inicio a:hover {
+    background-color: #2D1A10;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(45, 26, 16, 0.25);
+}
+
+/* ================================================
+   TESTIMONIOS
+   ================================================ */
+
+#testimonios {
+    display: flex;
+    gap: 30px;
+    padding: 20px 0;
+}
+
+#testimonios article {
+    background-color: #FFFFFF;
+    border-left: 4px solid #6F4E37;
+    border-radius: 8px;
+    padding: 28px 30px;
+    flex: 1;
+    box-shadow: 0 4px 15px rgba(111, 78, 55, 0.08);
+}
+
+#testimonios article p:first-child {
+    font-size: 16px;
+    color: #4A3728;
+    font-style: italic;
+    margin-bottom: 16px;
+    line-height: 1.8;
+}
+
+#testimonios article p:last-child {
+    font-size: 14px;
+    color: #6F4E37;
+    font-weight: 600;
+}
+
+/* ================================================
+   PRODUCTOS
+   ================================================ */
+
+#encabezado-productos {
+    text-align: center;
+    padding: 10px 0 20px 0;
+}
+
+#encabezado-productos h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6F4E37;
+    margin-bottom: 10px;
+}
+
+#encabezado-productos p {
+    font-size: 17px;
+    color: #7A6155;
+}
+
+#catalogo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 35px;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+#catalogo article {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 25px;
+    width: 300px;
+    box-shadow: 0 4px 20px rgba(111, 78, 55, 0.10);
+    border: 1px solid #F0E5D8;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#catalogo article:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 30px rgba(111, 78, 55, 0.18);
+}
+
+#catalogo article img {
+    border-radius: 10px;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    margin: 0 auto 18px auto;
+}
+
+#catalogo article h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #2D1A10;
+    margin-bottom: 10px;
+}
+
+#catalogo article p {
+    font-size: 14px;
+    color: #7A6155;
+    margin-bottom: 14px;
+    line-height: 1.6;
+}
+
+#catalogo article strong {
+    display: block;
+    font-size: 20px;
+    color: #6F4E37;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* ================================================
+   HISTORIA
+   ================================================ */
+
+#herencia {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#herencia img {
+    border-radius: 14px;
+    box-shadow: 0 12px 35px rgba(111, 78, 55, 0.18);
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#herencia em {
+    font-size: 15px;
+    color: #9C7B69;
+    letter-spacing: 1px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+#herencia h4 {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #9C7B69;
+    margin-bottom: 10px;
+}
+
+#herencia h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6F4E37;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+#herencia p {
+    font-size: 16px;
+    color: #4A3728;
+    margin-bottom: 16px;
+    text-align: left;
+    line-height: 1.8;
+}
+
+/* ================================================
+   CONTACTO
+   ================================================ */
+
+#encabezado-contacto {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#encabezado-contacto h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6F4E37;
+    margin-bottom: 12px;
+}
+
+#encabezado-contacto p {
+    font-size: 17px;
+    color: #7A6155;
+}
+
+#formulario {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 4px 20px rgba(111, 78, 55, 0.10);
+    border: 1px solid #F0E5D8;
+}
+
+#formulario label {
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #2D1A10;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #2D1A10;
+    background-color: #FDFBF7;
+    border: 1px solid #EADBC8;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    resize: vertical;
+}
+
+#formulario input[type="text"]:focus,
+#formulario input[type="email"]:focus,
+#formulario textarea:focus {
+    outline: none;
+    border-color: #6F4E37;
+    box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.12);
+}
+
+#formulario textarea {
+    min-height: 140px;
+}
+
+#formulario div,
+#formulario br + button,
+#formulario button + button {
+    margin-top: 5px;
+}
+
+#formulario button[type="reset"] {
+    background-color: transparent;
+    color: #6F4E37;
+    border: 2px solid #6F4E37;
+    margin-left: 10px;
+}
+
+#formulario button[type="reset"]:hover {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+}
+
+#info-directa {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 30px 35px;
+    box-shadow: 0 4px 15px rgba(111, 78, 55, 0.08);
+    border: 1px solid #F0E5D8;
+}
+
+#info-directa h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 22px;
+    color: #6F4E37;
+    margin-bottom: 18px;
+}
+
+#info-directa p {
+    font-size: 15px;
+    color: #4A3728;
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+
+/* ================================================
+   CARRITO DE COMPRAS
+   ================================================ */
+
+#encabezado-carrito {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#encabezado-carrito h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #6F4E37;
+    margin-bottom: 10px;
+}
+
+#encabezado-carrito p {
+    font-size: 16px;
+    color: #7A6155;
+}
+
+#detalle-compras {
+    overflow-x: auto;
+}
+
+#detalle-compras table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(111, 78, 55, 0.10);
+    border: 1px solid #F0E5D8;
+}
+
+#detalle-compras thead {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+}
+
+#detalle-compras thead th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+#detalle-compras tbody tr {
+    border-bottom: 1px solid #F0E5D8;
+    transition: background 0.2s;
+}
+
+#detalle-compras tbody tr:last-child {
+    border-bottom: none;
+}
+
+#detalle-compras tbody tr:hover {
+    background-color: #FDF7F2;
+}
+
+#detalle-compras tbody td {
+    padding: 16px 20px;
+    font-size: 15px;
+    color: #2D1A10;
+}
+
+#detalle-compras tfoot {
+    background-color: #FDF7F2;
+    border-top: 2px solid #EADBC8;
+}
+
+#detalle-compras tfoot td {
+    padding: 16px 20px;
+    font-size: 16px;
+}
+
+#detalle-compras input[type="number"] {
+    width: 65px;
+    padding: 7px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15px;
+    color: #2D1A10;
+    background-color: #FDFBF7;
+    border: 1px solid #EADBC8;
+    border-radius: 5px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+#detalle-compras input[type="number"]:focus {
+    outline: none;
+    border-color: #6F4E37;
+}
+
+#detalle-compras button[type="button"] {
+    background-color: transparent;
+    color: #B85C38;
+    border: 1px solid #B85C38;
+    padding: 7px 14px;
+    font-size: 12px;
+    border-radius: 4px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#detalle-compras button[type="button"]:hover {
+    background-color: #B85C38;
+    color: #FFFFFF;
+    transform: none;
+    box-shadow: none;
+}
+
+/* Botones de acción del carrito */
+#detalle-compras > div {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+    flex-wrap: wrap;
+}
+
+#detalle-compras > div a button {
+    background-color: transparent;
+    color: #6F4E37;
+    border: 2px solid #6F4E37;
+}
+
+#detalle-compras > div a button:hover {
+    background-color: #6F4E37;
+    color: #FFFFFF;
+}
+
+/* ================================================
+   FOOTER
+   ================================================ */
+
+footer {
+    background-color: #2D1A10;
+    color: #FDFBF7;
+    padding: 50px 5% 25px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 35px;
+    margin-top: 60px;
+}
+
+footer section h3 {
+    font-family: 'Playfair Display', Georgia, serif;
+    color: #FFFFFF;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+footer section h4 {
+    color: #FFFFFF;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+}
+
+footer section p {
+    font-size: 14px;
+    color: #C4B09A;
+    line-height: 1.7;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #EADBC8;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #FFFFFF;
+}
+
+footer > p {
+    grid-column: 1 / -1;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 22px;
+    font-size: 13px;
+    color: #A89F91;
+    letter-spacing: 0.3px;
+}
+
+/* ================================================
+   RESPONSIVE — TABLET (≤ 900px)
+   ================================================ */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 16px 4%;
+    }
+
+    header h1 {
+        font-size: 26px;
+    }
+
+    header nav ul {
+        gap: 16px;
+    }
+
+    header nav a {
+        font-size: 13px;
+    }
+
+    #inicio h2 {
+        font-size: 34px;
+    }
+
+    #inicio p {
+        font-size: 16px;
+    }
+
+    #testimonios {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #catalogo {
+        gap: 25px;
+    }
+
+    #catalogo article {
+        width: 280px;
+    }
+
+    #herencia h2 {
+        font-size: 30px;
+    }
+
+    #formulario {
+        padding: 30px 25px;
+    }
+
+    footer {
+        padding: 40px 4% 20px 4%;
+        gap: 25px;
+    }
+}
+
+/* ================================================
+   RESPONSIVE — MÓVIL (≤ 600px)
+   ================================================ */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* Header mobile */
+    header {
+        padding: 14px 5%;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav {
+        width: 100%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 4px;
+        padding: 8px 0;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        width: 100%;
+    }
+
+    header nav a {
+        display: block;
+        padding: 8px 5px;
+        font-size: 14px;
+        border-bottom: 1px solid #F0E5D8;
+    }
+
+    header nav a:hover {
+        border-bottom: 1px solid #6F4E37;
+    }
+
+    /* Hero */
+    main {
+        padding: 30px 15px;
+    }
+
+    #inicio h2 {
+        font-size: 28px;
+    }
+
+    #inicio p {
+        font-size: 15px;
+    }
+
+    #inicio a {
+        display: block;
+        margin: 8px auto;
+        max-width: 260px;
+        text-align: center;
+    }
+
+    /* Productos */
+    #catalogo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #catalogo article {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    #encabezado-productos h2,
+    #encabezado-carrito h2,
+    #encabezado-contacto h2,
+    #herencia h2 {
+        font-size: 28px;
+    }
+
+    /* Formulario */
+    #formulario {
+        padding: 25px 18px;
+    }
+
+    #formulario button[type="reset"] {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    /* Carrito — tabla en móvil */
+    #detalle-compras table {
+        min-width: 480px;
+    }
+
+    #detalle-compras thead th,
+    #detalle-compras tbody td,
+    #detalle-compras tfoot td {
+        padding: 12px 12px;
+        font-size: 13px;
+    }
+
+    #detalle-compras > div {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #detalle-compras > div a,
+    #detalle-compras > div a button,
+    #detalle-compras > div > button {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Historia */
+    #herencia {
+        padding: 10px 0;
+    }
+
+    /* Contacto */
+    #info-directa {
+        padding: 25px 18px;
+    }
+
+    /* Footer */
+    footer {
+        grid-template-columns: 1fr;
+        padding: 35px 5% 20px 5%;
+        gap: 25px;
+    }
+
+    hr {
+        margin: 28px auto;
+    }
+}
