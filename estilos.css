@@ -1,28 +1,20 @@
-/* ================================================
-   CARDOZ — Panadería Artesanal
-   estilos.css
-   ================================================ */
 
-/* --- Fuentes --- */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;800&family=Lato:wght@300;400;600;700&display=swap');
-
-/* --- Reset base --- */
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-/* --- Body --- */
+
 body {
-    font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #FDFBF7;
     color: #2D1A10;
     line-height: 1.7;
     font-size: 16px;
 }
 
-/* --- Separador --- */
+
 hr {
     border: 0;
     height: 1px;
@@ -31,7 +23,6 @@ hr {
     width: 90%;
 }
 
-/* --- Imágenes --- */
 img {
     max-width: 100%;
     height: auto;
@@ -40,16 +31,13 @@ img {
     margin: 15px auto;
 }
 
-/* --- Contenedor principal --- */
 main {
     max-width: 1100px;
     margin: 0 auto;
     padding: 50px 20px;
 }
 
-/* ================================================
-   HEADER & NAVEGACIÓN
-   ================================================ */
+
 
 header {
     background-color: #FFFFFF;
@@ -63,7 +51,6 @@ header {
 
 header h1 {
     color: #6F4E37;
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 30px;
     font-weight: 800;
     letter-spacing: 1px;
@@ -81,64 +68,32 @@ header nav a {
     color: #2D1A10;
     font-weight: 600;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    transition: color 0.3s;
-    padding-bottom: 3px;
-    border-bottom: 2px solid transparent;
 }
 
 header nav a:hover {
     color: #6F4E37;
-    border-bottom: 2px solid #6F4E37;
 }
 
-/* Hamburger (mobile) — oculto por defecto en desktop */
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 26px;
-    color: #6F4E37;
-    cursor: pointer;
-    padding: 5px;
-    box-shadow: none;
-    transform: none;
-}
 
-.menu-toggle:hover {
-    background: none;
-    transform: none;
-}
-
-/* ================================================
-   BOTONES
-   ================================================ */
 
 button {
     background-color: #6F4E37;
     color: #FFFFFF;
     border: none;
     padding: 11px 24px;
-    font-family: 'Lato', sans-serif;
     font-size: 14px;
     font-weight: 700;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 button:hover {
     background-color: #2D1A10;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(45, 26, 16, 0.25);
 }
 
-/* ================================================
-   PÁGINA PRINCIPAL — HERO
-   ================================================ */
+
 
 #inicio {
     text-align: center;
@@ -146,7 +101,6 @@ button:hover {
 }
 
 #inicio h2 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 42px;
     font-weight: 800;
     color: #6F4E37;
@@ -158,9 +112,6 @@ button:hover {
     font-size: 18px;
     color: #55443C;
     margin-bottom: 28px;
-    max-width: 550px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #inicio img {
@@ -179,21 +130,16 @@ button:hover {
     border-radius: 5px;
     font-weight: 700;
     font-size: 14px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
     margin: 8px;
-    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    transition: background 0.3s, transform 0.2s;
 }
 
 #inicio a:hover {
     background-color: #2D1A10;
     transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(45, 26, 16, 0.25);
 }
 
-/* ================================================
-   TESTIMONIOS
-   ================================================ */
+
 
 #testimonios {
     display: flex;
@@ -210,23 +156,6 @@ button:hover {
     box-shadow: 0 4px 15px rgba(111, 78, 55, 0.08);
 }
 
-#testimonios article p:first-child {
-    font-size: 16px;
-    color: #4A3728;
-    font-style: italic;
-    margin-bottom: 16px;
-    line-height: 1.8;
-}
-
-#testimonios article p:last-child {
-    font-size: 14px;
-    color: #6F4E37;
-    font-weight: 600;
-}
-
-/* ================================================
-   PRODUCTOS
-   ================================================ */
 
 #encabezado-productos {
     text-align: center;
@@ -234,7 +163,6 @@ button:hover {
 }
 
 #encabezado-productos h2 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 36px;
     font-weight: 700;
     color: #6F4E37;
@@ -248,7 +176,6 @@ button:hover {
 
 #catalogo {
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     gap: 35px;
     justify-content: center;
@@ -280,7 +207,6 @@ button:hover {
 }
 
 #catalogo article h3 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 20px;
     font-weight: 700;
     color: #2D1A10;
@@ -302,9 +228,7 @@ button:hover {
     margin-bottom: 16px;
 }
 
-/* ================================================
-   HISTORIA
-   ================================================ */
+
 
 #herencia {
     max-width: 750px;
@@ -321,25 +245,15 @@ button:hover {
     margin-bottom: 25px;
 }
 
-#herencia em {
-    font-size: 15px;
-    color: #9C7B69;
-    letter-spacing: 1px;
-    display: block;
-    margin-bottom: 20px;
-}
-
 #herencia h4 {
     font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
     letter-spacing: 3px;
     color: #9C7B69;
     margin-bottom: 10px;
 }
 
 #herencia h2 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 36px;
     font-weight: 700;
     color: #6F4E37;
@@ -355,9 +269,7 @@ button:hover {
     line-height: 1.8;
 }
 
-/* ================================================
-   CONTACTO
-   ================================================ */
+
 
 #encabezado-contacto {
     text-align: center;
@@ -365,7 +277,6 @@ button:hover {
 }
 
 #encabezado-contacto h2 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 36px;
     font-weight: 700;
     color: #6F4E37;
@@ -387,59 +298,15 @@ button:hover {
     border: 1px solid #F0E5D8;
 }
 
-#formulario label {
-    display: block;
-    font-size: 14px;
-    font-weight: 700;
-    color: #2D1A10;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
-
-#formulario input[type="text"],
-#formulario input[type="email"],
+#formulario input,
 #formulario textarea {
     width: 100%;
     padding: 12px 15px;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: #2D1A10;
     background-color: #FDFBF7;
     border: 1px solid #EADBC8;
     border-radius: 6px;
-    transition: border-color 0.3s, box-shadow 0.3s;
-    resize: vertical;
-}
-
-#formulario input[type="text"]:focus,
-#formulario input[type="email"]:focus,
-#formulario textarea:focus {
-    outline: none;
-    border-color: #6F4E37;
-    box-shadow: 0 0 0 3px rgba(111, 78, 55, 0.12);
-}
-
-#formulario textarea {
-    min-height: 140px;
-}
-
-#formulario div,
-#formulario br + button,
-#formulario button + button {
-    margin-top: 5px;
-}
-
-#formulario button[type="reset"] {
-    background-color: transparent;
-    color: #6F4E37;
-    border: 2px solid #6F4E37;
-    margin-left: 10px;
-}
-
-#formulario button[type="reset"]:hover {
-    background-color: #6F4E37;
-    color: #FFFFFF;
 }
 
 #info-directa {
@@ -453,7 +320,6 @@ button:hover {
 }
 
 #info-directa h3 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 22px;
     color: #6F4E37;
     margin-bottom: 18px;
@@ -466,9 +332,6 @@ button:hover {
     line-height: 1.7;
 }
 
-/* ================================================
-   CARRITO DE COMPRAS
-   ================================================ */
 
 #encabezado-carrito {
     text-align: center;
@@ -476,7 +339,6 @@ button:hover {
 }
 
 #encabezado-carrito h2 {
-    font-family: 'Playfair Display', Georgia, serif;
     font-size: 36px;
     font-weight: 700;
     color: #6F4E37;
@@ -497,7 +359,6 @@ button:hover {
     border-collapse: collapse;
     background-color: #FFFFFF;
     border-radius: 10px;
-    overflow: hidden;
     box-shadow: 0 4px 20px rgba(111, 78, 55, 0.10);
     border: 1px solid #F0E5D8;
 }
@@ -512,32 +373,17 @@ button:hover {
     text-align: left;
     font-size: 13px;
     font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-}
-
-#detalle-compras tbody tr {
-    border-bottom: 1px solid #F0E5D8;
-    transition: background 0.2s;
-}
-
-#detalle-compras tbody tr:last-child {
-    border-bottom: none;
-}
-
-#detalle-compras tbody tr:hover {
-    background-color: #FDF7F2;
 }
 
 #detalle-compras tbody td {
     padding: 16px 20px;
     font-size: 15px;
     color: #2D1A10;
+    border-bottom: 1px solid #F0E5D8;
 }
 
 #detalle-compras tfoot {
     background-color: #FDF7F2;
-    border-top: 2px solid #EADBC8;
 }
 
 #detalle-compras tfoot td {
@@ -545,91 +391,41 @@ button:hover {
     font-size: 16px;
 }
 
-#detalle-compras input[type="number"] {
+#detalle-compras input {
     width: 65px;
     padding: 7px 10px;
-    font-family: 'Lato', sans-serif;
     font-size: 15px;
     color: #2D1A10;
     background-color: #FDFBF7;
     border: 1px solid #EADBC8;
     border-radius: 5px;
     text-align: center;
-    transition: border-color 0.3s;
 }
 
-#detalle-compras input[type="number"]:focus {
-    outline: none;
-    border-color: #6F4E37;
-}
-
-#detalle-compras button[type="button"] {
-    background-color: transparent;
-    color: #B85C38;
-    border: 1px solid #B85C38;
-    padding: 7px 14px;
-    font-size: 12px;
-    border-radius: 4px;
-    transition: background 0.3s, color 0.3s;
-}
-
-#detalle-compras button[type="button"]:hover {
-    background-color: #B85C38;
-    color: #FFFFFF;
-    transform: none;
-    box-shadow: none;
-}
-
-/* Botones de acción del carrito */
-#detalle-compras > div {
-    display: flex;
-    justify-content: flex-end;
-    gap: 12px;
-    margin-top: 25px;
-    flex-wrap: wrap;
-}
-
-#detalle-compras > div a button {
-    background-color: transparent;
-    color: #6F4E37;
-    border: 2px solid #6F4E37;
-}
-
-#detalle-compras > div a button:hover {
-    background-color: #6F4E37;
-    color: #FFFFFF;
-}
-
-/* ================================================
-   FOOTER
-   ================================================ */
 
 footer {
     background-color: #2D1A10;
     color: #FDFBF7;
     padding: 50px 5% 25px 5%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: 1fr;
     gap: 35px;
     margin-top: 60px;
 }
 
-footer section h3 {
-    font-family: 'Playfair Display', Georgia, serif;
+footer h3 {
     color: #FFFFFF;
     font-size: 22px;
     margin-bottom: 12px;
 }
 
-footer section h4 {
+footer h4 {
     color: #FFFFFF;
     font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
     margin-bottom: 16px;
 }
 
-footer section p {
+footer p {
     font-size: 14px;
     color: #C4B09A;
     line-height: 1.7;
@@ -654,44 +450,19 @@ footer a:hover {
     color: #FFFFFF;
 }
 
-footer > p {
-    grid-column: 1 / -1;
-    text-align: center;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 22px;
-    font-size: 13px;
-    color: #A89F91;
-    letter-spacing: 0.3px;
-}
-
-/* ================================================
-   RESPONSIVE — TABLET (≤ 900px)
-   ================================================ */
 
 @media (max-width: 900px) {
 
-    header {
-        padding: 16px 4%;
-    }
-
     header h1 {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     header nav ul {
-        gap: 16px;
-    }
-
-    header nav a {
-        font-size: 13px;
+        gap: 14px;
     }
 
     #inicio h2 {
-        font-size: 34px;
-    }
-
-    #inicio p {
-        font-size: 16px;
+        font-size: 32px;
     }
 
     #testimonios {
@@ -699,82 +470,40 @@ footer > p {
         gap: 20px;
     }
 
-    #catalogo {
-        gap: 25px;
-    }
-
     #catalogo article {
         width: 280px;
     }
 
     #herencia h2 {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     #formulario {
         padding: 30px 25px;
     }
-
-    footer {
-        padding: 40px 4% 20px 4%;
-        gap: 25px;
-    }
 }
 
-/* ================================================
-   RESPONSIVE — MÓVIL (≤ 600px)
-   ================================================ */
+
 
 @media (max-width: 600px) {
 
-    body {
-        font-size: 15px;
-    }
-
-    /* Header mobile */
     header {
-        padding: 14px 5%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: flex-start;
         gap: 12px;
-    }
-
-    header h1 {
-        font-size: 24px;
-    }
-
-    header nav {
-        width: 100%;
     }
 
     header nav ul {
         flex-direction: column;
-        gap: 4px;
-        padding: 8px 0;
-        align-items: flex-start;
+        gap: 6px;
     }
 
-    header nav ul li {
-        width: 100%;
-    }
-
-    header nav a {
-        display: block;
-        padding: 8px 5px;
-        font-size: 14px;
-        border-bottom: 1px solid #F0E5D8;
-    }
-
-    header nav a:hover {
-        border-bottom: 1px solid #6F4E37;
-    }
-
-    /* Hero */
     main {
         padding: 30px 15px;
     }
 
     #inicio h2 {
-        font-size: 28px;
+        font-size: 26px;
     }
 
     #inicio p {
@@ -788,7 +517,6 @@ footer > p {
         text-align: center;
     }
 
-    /* Productos */
     #catalogo {
         flex-direction: column;
         align-items: center;
@@ -799,65 +527,16 @@ footer > p {
         max-width: 360px;
     }
 
-    #encabezado-productos h2,
-    #encabezado-carrito h2,
-    #encabezado-contacto h2,
-    #herencia h2 {
-        font-size: 28px;
-    }
-
-    /* Formulario */
     #formulario {
         padding: 25px 18px;
     }
 
-    #formulario button[type="reset"] {
-        margin-left: 0;
-        margin-top: 10px;
-    }
-
-    /* Carrito — tabla en móvil */
-    #detalle-compras table {
-        min-width: 480px;
-    }
-
-    #detalle-compras thead th,
-    #detalle-compras tbody td,
-    #detalle-compras tfoot td {
-        padding: 12px 12px;
-        font-size: 13px;
-    }
-
-    #detalle-compras > div {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    #detalle-compras > div a,
-    #detalle-compras > div a button,
-    #detalle-compras > div > button {
-        width: 100%;
-        text-align: center;
-    }
-
-    /* Historia */
-    #herencia {
-        padding: 10px 0;
-    }
-
-    /* Contacto */
-    #info-directa {
-        padding: 25px 18px;
-    }
-
-    /* Footer */
     footer {
         grid-template-columns: 1fr;
         padding: 35px 5% 20px 5%;
-        gap: 25px;
     }
 
     hr {
-        margin: 28px auto;
+        margin: 25px auto;
     }
 }
