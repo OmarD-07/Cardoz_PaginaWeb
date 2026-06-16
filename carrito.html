@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen de Cotización - Cardoz Pastelería Fina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body style="background-color: #FCF8F4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 sticky-top" style="background-color: #F4EBE1;">
+        <div class="container">
+            <a class="navbar-brand" href="principal.html">
+                <img src="media/logo.png" alt="Logo Cardoz" style="height: 90px; width: auto; object-fit: contain;">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-medium fs-5">
+                    <li class="nav-item"><a class="nav-link" href="principal.html" style="color: #2D1A10;">Inicio</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="productos.html" style="color: #2D1A10;">Catálogo</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="historia.html" style="color: #2D1A10;">Nuestra Historia</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="contacto.html" style="color: #2D1A10;">Contacto</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                        <a class="btn text-white px-4 py-2 shadow-sm" href="compra.html" style="background-color: #6F4E37; border-radius: 8px;">
+                            <i class="bi bi-cart3 me-2"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container py-5 my-4">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold" style="color: #2D1A10;">Tu Selección de Evento</h1>
+            <div style="height: 4px; width: 60px; background-color: #6F4E37; margin: 15px auto; border-radius: 2px;"></div>
+        </div>
+
+        <div id="carrito-vacio" class="text-center py-5 d-none">
+            <div class="mb-4" style="color: #6F4E37;">
+                <i class="bi bi-basket3 display-1"></i>
+            </div>
+            <h3 class="fw-bold" style="color: #2D1A10;">Aún no tienes productos seleccionados</h3>
+            <p class="text-muted mb-4">Explora nuestro catálogo premium y añade los bocaditos o tortas ideales para tu celebración.</p>
+            <a href="productos.html" class="btn btn-lg text-white shadow-sm px-4" style="background-color: #6F4E37; border-radius: 8px;">
+                <i class="bi bi-journal-bookmark me-2"></i>Ver Catálogo
+            </a>
+        </div>
+
+        <div id="carrito-con-contenido" class="row g-5">
+            
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm rounded-4 p-4 h-100" style="background-color: #F4EBE1;">
+                    <h4 class="fw-bold mb-4" style="color: #2D1A10;">Productos Elegidos</h4>
+                    
+                    <div class="table-responsive bg-white rounded-3 shadow-sm p-2">
+                        <table class="table table-borderless align-middle mb-0">
+                            <thead class="border-bottom text-muted small">
+                                <tr>
+                                    <th scope="col" class="ps-3">Concepto / Producto</th>
+                                    <th scope="col" class="text-center">Precio Base</th>
+                                    <th scope="col" class="text-end pe-3">Acción</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lista-carrito">
+                                </tbody>
+                        </table>
+                    </div>
+                    
+                    <div class="text-start mt-3">
+                        <button id="btn-vaciar-carrito" class="btn btn-sm btn-light text-danger border-0 shadow-sm" style="border-radius: 6px;">
+                            <i class="bi bi-trash me-1"></i>Vaciar selección
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-0 shadow-sm rounded-4 p-4 text-center" style="background-color: #F4EBE1;">
+                    <h4 class="fw-bold mb-4" style="color: #2D1A10;">Presupuesto Estimado</h4>
+                    
+                    <div class="bg-white rounded-3 p-4 shadow-sm mb-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="text-muted">Subtotal ítems</span>
+                            <span id="subtotal-precio" class="fw-semibold">S/. 0.00</span>
+                        </div>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="text-muted">Asesoría de montaje</span>
+                            <span class="text-success fw-medium">Gratis</span>
+                        </div>
+                        <hr class="my-3 text-muted opacity-25">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="fw-bold fs-5" style="color: #2D1A10;">Total Estimado</span>
+                            <span id="total-precio" class="fw-bold fs-4" style="color: #6F4E37;">S/. 0.00</span>
+                        </div>
+                        <small class="text-muted d-block mt-2 fst-italic">El precio final puede variar según personalizaciones.</small>
+                    </div>
+
+                    <button id="btn-confirmar-cotizacion" class="btn btn-lg text-white w-100 py-3 shadow-sm mb-3" style="background-color: #6F4E37; border-radius: 8px;">
+                        <i class="bi bi-whatsapp me-2"></i>Enviar a WhatsApp
+                    </button>
+                    <a href="productos.html" class="btn btn-light bg-white border-0 text-muted w-100 py-2 shadow-sm" style="border-radius: 8px;">
+                        <i class="bi bi-arrow-left me-2"></i>Seguir agregando
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="pt-5 pb-4 mt-5" style="background-color: #2D1A10; color: #FDFBF7;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold text-white mb-3">Cardoz</h4>
+                    <p class="small text-white-50" style="line-height: 1.8;">Arte en azúcar y pastelería fina. Comprometidos con la elegancia and el sabor para tus momentos más especiales.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4" class="text-white-50 text-decoration-none"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+                        <li class="mb-2"><a href="https://www.facebook.com/PasteleriaCardoz/" class="text-white-50 text-decoration-none"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+                        <li class="mb-2"><a href="https://www.google.com/maps/place/Cardoz+Pasteleria+-+Cafe/@-12.0643714,-75.2106733,17z/data=!3m1!4b1!4m6!3m5!1s0x910e9750176f2d43:0x5f67500ad6d46696!8m2!3d-12.0643767!4d-75.2080984!16s%2Fg%2F11h8n1vbk1?entry=tts&g_ep=EgoyMDI2MDUyNS4wIPu8ASoASAFQAw%3D%3D&skid=2d5b1b3a-5ccf-431b-9b41-db40b258bb6f" class="text-white-50 text-decoration-none"><i class="bi bi-geo-alt-fill me-2"></i>Ubicación</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Contacto</h5>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-shop me-2"></i>Jr. Ayacucho 133, Huancayo</p>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-envelope-at me-2"></i>eventos@cardozbakery.com</p>
+                    <p class="small text-white-50 mb-0"><i class="bi bi-telephone me-2"></i>+51 900 123 456</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4 mt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="small text-white-50 mb-0">© 2026 Cardoz Pastelería Fina - Artesanos desde 2001</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

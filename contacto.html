@@ -3,97 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - Panadería Cardoz</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Contacto - Cardoz Pastelería Fina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body style="background-color: #FCF8F4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
-    <header>
-        <h1>Cardoz</h1>
-        <nav>
-            <ul>
-                <li><a href="principal.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="historia.html">Nuestra Historia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 sticky-top" style="background-color: #F4EBE1;">
+        <div class="container">
+            <a class="navbar-brand" href="principal.html">
+                <img src="media/logo.png" alt="Logo Cardoz" style="height: 90px; width: auto; object-fit: contain;">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-medium fs-5">
+                    <li class="nav-item"><a class="nav-link" href="principal.html" style="color: #2D1A10;">Inicio</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="productos.html" style="color: #2D1A10;">Catálogo</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="historia.html" style="color: #2D1A10;">Nuestra Historia</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link active fw-bold" href="contacto.html" style="color: #6F4E37;">Contacto</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                        <a class="btn text-white px-4 py-2 shadow-sm" href="carrito.html" style="background-color: #6F4E37; border-radius: 8px;">
+                            <i class="bi bi-cart3 me-2"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <hr>
+    <main class="container py-5 my-4">
+        <div class="text-center mb-5">
+            <h1 class="fw-bold" style="color: #2D1A10;">Ponte en Contacto</h1>
+            <div style="height: 4px; width: 60px; background-color: #6F4E37; margin: 15px auto; border-radius: 2px;"></div>
+            <p class="lead text-muted mx-auto" style="max-width: 600px;">¿Deseas cotizar una mesa de dulces, tienes dudas sobre un pedido especial o quieres agendar una degustación? Escríbenos.</p>
+        </div>
 
-    <main>
-        <section id="encabezado-contacto">
-            <h2>Ponte en contacto con nosotros</h2>
-            <p>¿Tienes dudas sobre un pedido especial o quieres saber más de nuestros panes? Escríbenos.</p>
-        </section>
+        <div class="row g-5">
+            <div class="col-lg-7">
+                <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5 h-100" style="background-color: #F4EBE1;">
+                    <h4 class="fw-bold mb-4" style="color: #2D1A10;">Envíanos un Mensaje</h4>
+                    <form action="#" method="POST">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="nombre" class="form-label fw-semibold" style="color: #4A3B2C;">Nombre completo</label>
+                                <input type="text" class="form-control form-control-lg bg-white border-0 shadow-sm" id="nombre" name="nombre" placeholder="Ej. Mariana Gómez" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="correo" class="form-label fw-semibold" style="color: #4A3B2C;">Correo electrónico</label>
+                                <input type="email" class="form-control form-control-lg bg-white border-0 shadow-sm" id="correo" name="correo" placeholder="tu@correo.com" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="asunto" class="form-label fw-semibold" style="color: #4A3B2C;">Asunto</label>
+                                <input type="text" class="form-control form-control-lg bg-white border-0 shadow-sm" id="asunto" name="asunto" placeholder="Ej. Cotización Boda 2026" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="mensaje" class="form-label fw-semibold" style="color: #4A3B2C;">Tu Mensaje</label>
+                                <textarea class="form-control form-control-lg bg-white border-0 shadow-sm" id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos los detalles de tu evento..." required></textarea>
+                            </div>
+                            <div class="col-12 mt-4 d-flex gap-3">
+                                <button type="submit" class="btn btn-lg text-white px-5 shadow-sm" style="background-color: #6F4E37; border-radius: 8px;">Enviar Mensaje</button>
+                                <button type="reset" class="btn btn-lg bg-white border-0 text-muted px-4 shadow-sm" style="border-radius: 8px;">Limpiar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
 
-        <section id="formulario">
-            <form action="#" method="POST">
-                <label for="nombre"><strong>Nombre completo:</strong></label><br>
-                <input type="text" id="nombre" name="nombre" placeholder="Ej. Mariana Gómez" required size="40">
-                
-                <br><br>
+            <div class="col-lg-5">
+                <div class="card border-0 shadow-sm rounded-4 p-4 mb-4" style="background-color: #F4EBE1;">
+                    <h4 class="fw-bold mb-4" style="color: #2D1A10;">Información Directa</h4>
+                    
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="d-inline-flex p-3 rounded-circle me-3 bg-white shadow-sm" style="color: #6F4E37;">
+                            <i class="bi bi-geo-alt-fill fs-4"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h6 class="fw-bold mb-1" style="color: #2D1A10;">Ubicación</h6>
+                            <p class="mb-0" style="color: #5D4A3A;">Jr. Ayacucho 133, Huancayo<br>Junín, Perú</p>
+                        </div>
+                    </div>
 
-                <label for="correo"><strong>Correo electrónico:</strong></label><br>
-                <input type="email" id="correo" name="correo" placeholder="tu@correo.com" required size="40">
-                
-                <br><br>
+                    <div class="d-flex align-items-start mb-4">
+                        <div class="d-inline-flex p-3 rounded-circle me-3 bg-white shadow-sm" style="color: #6F4E37;">
+                            <i class="bi bi-telephone-fill fs-4"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h6 class="fw-bold mb-1" style="color: #2D1A10;">Teléfono / WhatsApp</h6>
+                            <p class="mb-0" style="color: #5D4A3A;">+51 900 123 456<br><a href="#" class="text-decoration-none fw-semibold" style="color: #6F4E37;">Iniciar chat en WhatsApp</a></p>
+                        </div>
+                    </div>
 
-                <label for="asunto"><strong>Asunto:</strong></label><br>
-                <input type="text" id="asunto" name="asunto" placeholder="Ej. Pedido para evento" required size="40">
-                
-                <br><br>
+                    <div class="d-flex align-items-start">
+                        <div class="d-inline-flex p-3 rounded-circle me-3 bg-white shadow-sm" style="color: #6F4E37;">
+                            <i class="bi bi-clock-fill fs-4"></i>
+                        </div>
+                        <div class="mt-1">
+                            <h6 class="fw-bold mb-1" style="color: #2D1A10;">Horario de Atención</h6>
+                            <p class="mb-0" style="color: #5D4A3A;">Lunes a Sábado: 7:00 am - 8:00 pm<br>Domingos: Cerrado</p>
+                        </div>
+                    </div>
+                </div>
 
-                <label for="mensaje"><strong>Mensaje:</strong></label><br>
-                <textarea id="mensaje" name="mensaje" rows="6" cols="42" placeholder="Escribe tu mensaje aquí..." required></textarea>
-                
-                <br><br>
-
-                <button type="submit">Enviar Mensaje</button>
-                <button type="reset">Limpiar Formulario</button>
-            </form>
-        </section>
-
-        <br>
-        <hr>
-
-        <section id="info-directa">
-            <h3>¿Prefieres visitarnos o llamarnos?</h3>
-            <p><strong>📍 Ubicación:</strong> Jr. Ayacucho 133, Huancayo.</p>
-            <p><strong>📞 Teléfono / WhatsApp:</strong> +51 900 123 456</p>
-            <p><strong>🕒 Horario de atención:</strong> Lunes a Sábado de 7:00 am a 8:00 pm</p>
-        </section>
+                <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124905.14361556058!2d-75.2858713!3d-12.068136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e9640325d7e75%3A0xcad071207ea3b715!2sHuancayo%2C%20Peru!5e0!3m2!1ses-419!2spe!4v1700000000000!5m2!1ses-419!2spe" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
     </main>
 
-    <br>
-    <hr>
+    <footer class="pt-5 pb-4 mt-5" style="background-color: #2D1A10; color: #FDFBF7;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold text-white mb-3">Cardoz</h4>
+                    <p class="small text-white-50" style="line-height: 1.8;">Arte en azúcar y pastelería fina. Comprometidos con la elegancia y el sabor para tus momentos más especiales.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4" class="text-white-50 text-decoration-none"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+                        <li class="mb-2"><a href="https://www.facebook.com/PasteleriaCardoz/" class="text-white-50 text-decoration-none"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+                        <li class="mb-2"><a href="https://maps.app.goo.gl/PWmppuUv7nDqsrdz9" class="text-white-50 text-decoration-none"><i class="bi bi-geo-alt-fill me-2"></i>Ubicación</a></li>
+                    </ul>
+                </div>
 
-    <footer>
-        <section>
-            <h3>Cardoz</h3>
-            <p>Artesanos del pan desde hace generaciones. Comprometidos con el sabor real y los ingredientes nobles.</p>
-        </section>
-        
-        <section>
-            <h4>Navegación</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4">Instagram</a></li>
-                <li><a href="https://www.facebook.com/PasteleriaCardoz/">Facebook</a></li>
-                <li><a href="https://maps.app.goo.gl/PWmppuUv7nDqsrdz9">Ubicación</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Contacto</h4>
-            <p>Jr. Ayacucho 133</p>
-            <p>hola@cardozbakery.com</p>
-            <p>+51 900 123 456</p>
-        </section>
-        
-        <p>© 2026 Cardoz Artesanos</p>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Contacto</h5>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-shop me-2"></i>Jr. Ayacucho 133, Huancayo</p>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-envelope-at me-2"></i>eventos@cardozbakery.com</p>
+                    <p class="small text-white-50 mb-0"><i class="bi bi-telephone me-2"></i>+51 900 123 456</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4 mt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="small text-white-50 mb-0">© 2026 Cardoz Pastelería Fina - Artesanos desde 2001</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

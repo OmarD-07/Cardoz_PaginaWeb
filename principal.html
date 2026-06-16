@@ -3,77 +3,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería Cardoz</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Cardoz - Pastelería Fina y Eventos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body style="background-color: #FCF8F4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
-    <header>
-        <h1>Cardoz</h1>
-        <nav>
-            <ul>
-                <li><a href="principal.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="historia.html">Nuestra Historia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 sticky-top" style="background-color: #F4EBE1;">
+        <div class="container">
+            <a class="navbar-brand" href="principal.html">
+                <img src="media/logo.png" alt="Logo Cardoz Panadería y Pastelería" style="height: 90px; width: auto; object-fit: contain;">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-medium fs-5">
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="principal.html" style="color: #6F4E37;">Inicio</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="productos.html" style="color: #2D1A10;">Catálogo</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="historia.html" style="color: #2D1A10;">Nuestra Historia</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="contacto.html" style="color: #2D1A10;">Contacto</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                        <a class="btn text-white px-4 py-2 shadow-sm" href="carrito.html" style="background-color: #6F4E37; border-radius: 8px;">
+                            <i class="bi bi-cart3 me-2"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
-        <section id="inicio">
-            <h2>Tradición en cada bocado</h2>
-            <p>Pan artesanal horneado con masa madre y corazón en el centro de la ciudad.</p>
-            
-            <img src="https://plus.unsplash.com/premium_photo-1665669263531-cdcbe18e7fe4?q=80&w=1225&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Panes artesanales recién horneados" width="500">
-            <br><br>
+        <div class="container py-5 my-4">
+            <section id="inicio" class="p-4 p-md-5 shadow-sm" style="background-color: #F4EBE1; border-radius: 24px;">
+                <div class="row align-items-center gx-5 text-center text-lg-start">
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <span class="badge rounded-pill px-3 py-2 mb-3 shadow-sm bg-white" style="color: #6F4E37; letter-spacing: 1px; font-weight: 600;">Servicio Premium</span>
+                        <h1 class="display-4 fw-bold mb-4" style="color: #2D1A10;">El Arte de la Pastelería Fina</h1>
+                        <p class="lead mb-5" style="color: #5D4A3A; line-height: 1.8;">Tortas personalizadas, mesas de dulces y bocaditos elegantes para hacer de tus eventos en Huancayo un momento inolvidable.</p>
+                        
+                        <div class="d-flex flex-column flex-sm-row justify-content-center justify-content-lg-start gap-3">
+                            <a href="productos.html" class="btn btn-lg text-white shadow px-4 py-3" style="background-color: #6F4E37; border-radius: 8px;">
+                                <i class="bi bi-journal-bookmark me-2"></i>Ver Catálogo
+                            </a>
+                            <a href="contacto.html" class="btn btn-lg px-4 py-3 bg-white shadow-sm" style="color: #2D1A10; border: 1px solid #EADBC8; border-radius: 8px;">
+                                <i class="bi bi-envelope-paper me-2"></i>Cotizar Evento
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+                            <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80" alt="Torta elegante de pastelería fina" class="img-fluid rounded-4 shadow-lg border border-4 border-white">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-            <a href="productos.html">Ver Productos</a>
-            <a href="historia.html">Nuestra Historia</a>
-        </section>
-
-        <hr>
-
-        <section id="testimonios">
-            <article>
-                <p>"El mejor pan de la ciudad sin duda. El pan de masa madre tiene esa acidez perfecta que buscaba hace años. Se nota el amor en cada pieza."</p>
-                <p><strong>Mariana Gómez</strong> - Cliente Fiel</p>
-            </article>
-            
-            <article>
-                <p>"Los croissants son de otro mundo. No he encontrado nada igual fuera de Francia. El aroma que sale de la tienda es irresistible."</p>
-                <p><strong>Julián Rivas</strong> - Crítico Gastronómico</p>
-            </article>
+        <section id="testimonios" class="py-5 mt-5" style="background-color: #EADBC8;">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h2 class="fw-bold" style="color: #2D1A10;">Lo que dicen nuestros clientes</h2>
+                    <div style="height: 4px; width: 60px; background-color: #6F4E37; margin: 15px auto; border-radius: 2px;"></div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow rounded-4 p-4 bg-white">
+                            <div class="card-body">
+                                <i class="bi bi-quote fs-1 opacity-25 position-absolute top-0 end-0 mt-3 me-4" style="color: #D9A05B;"></i>
+                                <p class="card-text fs-5 text-muted fst-italic position-relative z-1 mb-4">"Encargamos la torta y los bocaditos para nuestro matrimonio y fue espectacular. Los detalles, la elegancia y la presentación dejaron a todos nuestros invitados encantados."</p>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <div class="rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; background-color: #FCF8F4;">
+                                        <i class="bi bi-person-fill fs-3" style="color: #6F4E37;"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0 fw-bold" style="color: #2D1A10;">Mariana Gómez</h5>
+                                        <small style="color: #D9A05B; font-weight: bold;">Novia Feliz</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card h-100 border-0 shadow rounded-4 p-4 bg-white">
+                            <div class="card-body">
+                                <i class="bi bi-quote fs-1 opacity-25 position-absolute top-0 end-0 mt-3 me-4" style="color: #D9A05B;"></i>
+                                <p class="card-text fs-5 text-muted fst-italic position-relative z-1 mb-4">"La mejor opción en Huancayo para eventos corporativos. Los mini postres y bocaditos finos le dieron un toque de muchísima distinción a nuestra inauguración."</p>
+                                <div class="d-flex align-items-center mt-auto">
+                                    <div class="rounded-circle p-3 me-3 d-flex align-items-center justify-content-center" style="width: 55px; height: 55px; background-color: #FCF8F4;">
+                                        <i class="bi bi-person-fill fs-3" style="color: #6F4E37;"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="mb-0 fw-bold" style="color: #2D1A10;">Julián Rivas</h5>
+                                        <small style="color: #D9A05B; font-weight: bold;">Organizador de Eventos</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
-    <hr>
+    <footer class="pt-5 pb-4" style="background-color: #2D1A10; color: #FDFBF7;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold text-white mb-3">Cardoz</h4>
+                    <p class="small text-white-50" style="line-height: 1.8;">Arte en azúcar y pastelería fina. Comprometidos con la elegancia y el sabor para tus momentos más especiales.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4" class="text-white-50 text-decoration-none"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+                        <li class="mb-2"><a href="https://www.facebook.com/PasteleriaCardoz/" class="text-white-50 text-decoration-none"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+                        <li class="mb-2"><a href="https://maps.app.goo.gl/PWmppuUv7nDqsrdz9" class="text-white-50 text-decoration-none"><i class="bi bi-geo-alt-fill me-2"></i>Ubicación</a></li>
+                    </ul>
+                </div>
 
-    <footer>
-        <section>
-            <h3>Cardoz</h3>
-            <p>Artesanos del pan desde hace generaciones. Comprometidos con el sabor real y los ingredientes nobles.</p>
-        </section>
-        
-        <section>
-            <h4>Navegación</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4">Instagram</a></li>
-                <li><a href="https://www.facebook.com/PasteleriaCardoz/">Facebook</a></li>
-                <li><a href="https://maps.app.goo.gl/PWmppuUv7nDqsrdz9">Ubicación</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Contacto</h4>
-            <p>Jr. Ayacucho 133</p>
-            <p>hola@cardozbakery.com</p>
-            <p>+51 900 123 456</p>
-        </section>
-        
-        <p>© 2026 Cardoz Artesanos</p>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Contacto</h5>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-shop me-2"></i>Jr. Ayacucho 133, Huancayo</p>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-envelope-at me-2"></i>eventos@cardozbakery.com</p>
+                    <p class="small text-white-50 mb-0"><i class="bi bi-telephone me-2"></i>+51 900 123 456</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4 mt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="small text-white-50 mb-0">© 2026 Cardoz Pastelería Fina</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

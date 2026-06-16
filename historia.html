@@ -3,63 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestra Historia - Panadería Cardoz</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Nuestra Historia - Cardoz Pastelería Fina</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
-<body>
+<body style="background-color: #FCF8F4; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
 
-    <header>
-        <h1>Cardoz</h1>
-        <nav>
-            <ul>
-                <li><a href="principal.html">Inicio</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="historia.html">Nuestra Historia</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm py-3 sticky-top" style="background-color: #F4EBE1;">
+        <div class="container">
+            <a class="navbar-brand" href="principal.html">
+                <img src="media/logo.png" alt="Logo Cardoz" style="height: 90px; width: auto; object-fit: contain;">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center fw-medium fs-5">
+                    <li class="nav-item"><a class="nav-link" href="principal.html" style="color: #2D1A10;">Inicio</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="productos.html" style="color: #2D1A10;">Catálogo</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link active fw-bold" href="historia.html" style="color: #6F4E37;">Nuestra Historia</a></li>
+                    <li class="nav-item ms-lg-3"><a class="nav-link" href="contacto.html" style="color: #2D1A10;">Contacto</a></li>
+                    <li class="nav-item ms-lg-4 mt-3 mt-lg-0">
+                        <a class="btn text-white px-4 py-2 shadow-sm" href="carrito.html" style="background-color: #6F4E37; border-radius: 8px;">
+                            <i class="bi bi-cart3 me-2"></i> Carrito
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <main>
-        <section id="herencia">
-            <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Manos de panadero amasando" width="500">
-            <p><em>"Desde 2001"</em></p>
-            
-            <h4>NUESTRA HERENCIA</h4>
-            <h2>Manos que amasan historias</h2>
-            <p>En Cardoz, creemos que el pan no es solo comida, es una conexión con nuestras raíces. Cada hogaza que sale de nuestro horno es el resultado de días de paciencia y cuidado.</p>
-            <p>Utilizamos granos seleccionados y nuestra propia cultura de masa madre iniciada hace décadas, asegurando que cada bocado tenga la textura y el aroma que solo el tiempo puede otorgar.</p>
-            <p>Nuestra misión es simple: devolver la honestidad al pan de cada día, honrando los métodos artesanales que se han perdido en la era industrial.</p>
+        
+        <section class="py-5" style="background-color: #FCF8F4;">
+            <div class="container my-4">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?auto=format&fit=crop&w=800&q=80" alt="Manos de pastelero artesanal" class="img-fluid rounded-4 shadow-lg mb-4">
+                        
+                        <p class="fs-4 fst-italic mb-3" style="color: #6F4E37;">"Desde 2001 en el corazón de Huancayo"</p>
+                        
+                        <h4 class="text-uppercase fw-bold mb-2" style="color: #6F4E37; letter-spacing: 2px;">Nuestra Herencia</h4>
+                        <h2 class="display-5 fw-bold mb-4" style="color: #2D1A10;">Manos que amasan historias</h2>
+                        
+                        <div class="text-start mx-auto fs-5" style="max-width: 750px; color: #5D4A3A; line-height: 1.8;">
+                            <p class="mb-4">En Cardoz, creemos que la alta pastelería y la panadería fina no son solo alimentos; son una conexión viva con nuestras traditions y una forma de arte. Cada creación que sale de nuestros talleres es el resultado directo de días de paciencia, técnica rigurosa y un profundo respeto por los ingredientes nobles.</p>
+                            <p class="mb-4">Iniciamos nuestro viaje combinando la mística de la fermentación natural de la masa madre con la finura de la repostería europea. Con los años, entendimos que los momentos más importantes de la vida en Huancayo se celebran alrededor de una mesa. Por ello, evolucionamos para especializarnos en tortas de diseño y bocaditos de alta gama para bodas, aniversarios y eventos corporativos de distinción.</p>
+                            <p>Nuestra misión sigue siendo la misma desde el primer día: devolver el valor, el tiempo y la honestidad a la mesa artesanal, huyendo de los procesos industriales masivos para ofrecerte piezas únicas llenas de texturas y aromas inolvidables.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <section class="py-5 shadow-sm" style="background-color: #F4EBE1;">
+            <div class="container py-4">
+                <div class="text-center mb-5">
+                    <h3 class="fw-bold" style="color: #2D1A10;">Nuestros Pilares</h3>
+                    <div style="height: 3px; width: 50px; background-color: #6F4E37; margin: 10px auto;"></div>
+                </div>
+                <div class="row g-4 text-center">
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: #FCF8F4; color: #6F4E37;">
+                                <i class="bi bi-heart-fill fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold" style="color: #2D1A10;">Pasión de Autor</h5>
+                            <p class="text-muted small px-lg-2 mb-0">No replicamos recetas genéricas; diseñamos conceptos personalizados que se adaptan a la temática visual y gastronómica de tu evento.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: #FCF8F4; color: #6F4E37;">
+                                <i class="bi bi-award-fill fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold" style="color: #2D1A10;">Calidad Sin Concesiones</h5>
+                            <p class="text-muted small px-lg-2 mb-0">Desde mantequilla local premium hasta chocolates de alta pureza. Seleccionamos rigurosamente cada insumo para un sabor excepcional.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-4 bg-white rounded-4 shadow-sm h-100">
+                            <div class="d-inline-flex p-3 rounded-circle mb-3" style="background-color: #FCF8F4; color: #6F4E37;">
+                                <i class="bi bi-stars fs-3"></i>
+                            </div>
+                            <h5 class="fw-bold" style="color: #2D1A10;">Elegancia Visual</h5>
+                            <p class="text-muted small px-lg-2 mb-0">Cuidamos los acabados milimétricamente. Estructuras perfectas, montajes impecables y flores de azúcar hechas completamente a mano.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5" style="background-color: #EADBC8;">
+            <div class="container py-4">
+                <div class="row align-items-center gy-4">
+                    <div class="col-md-6">
+                        <h3 class="fw-bold mb-3" style="color: #2D1A10;">El Arte Detrás de Cada Celebración</h3>
+                        <p class="mb-4" style="color: #4A3B2C; line-height: 1.8;">Crear una mesa de dulces o una torta personalizada requiere una sinergia perfecta entre el cliente y nuestros maestros pasteleros. Nuestro flujo de trabajo garantiza que tu evento sea perfecto:</p>
+                        <ul class="list-unstyled">
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill me-3 mt-1" style="color: #6F4E37;"></i>
+                                <div style="color: #4A3B2C;">
+                                    <strong style="color: #2D1A10;">1. Asesoría y Boceto:</strong> Escuchamos tus ideas, paleta de colores y estilo del evento para crear una propuesta arquitectónica y artística de tu pastel.
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill me-3 mt-1" style="color: #6F4E37;"></i>
+                                <div style="color: #4A3B2C;">
+                                    <strong style="color: #2D1A10;">2. Pruebas de Sabor:</strong> Definimos combinaciones sofisticadas de bizcochos húmedos, jugosos rellenos y coberturas sedosas que deleiten a tus invitados.
+                                </div>
+                            </li>
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="bi bi-check-circle-fill me-3 mt-1" style="color: #6F4E37;"></i>
+                                <div style="color: #4A3B2C;">
+                                    <strong style="color: #2D1A10;">3. Producción y Logística:</strong> Horneamos en lotes estrictamente frescos para el día del evento y nos encargamos del transporte cuidadoso y montaje profesional directo en el salón.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=700&q=80" alt="Mesa de postres decorada elegantemente" class="img-fluid rounded-4 shadow-md border border-4 border-white">
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
-    <hr>
+    <footer class="pt-5 pb-4" style="background-color: #2D1A10; color: #FDFBF7;">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <h4 class="fw-bold text-white mb-3">Cardoz</h4>
+                    <p class="small text-white-50" style="line-height: 1.8;">Arte en azúcar y pastelería fina. Comprometidos con la elegancia y el sabor para tus momentos más especiales.</p>
+                </div>
+                
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Navegación</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4" class="text-white-50 text-decoration-none"><i class="bi bi-instagram me-2"></i>Instagram</a></li>
+                        <li class="mb-2"><a href="https://www.facebook.com/PasteleriaCardoz/" class="text-white-50 text-decoration-none"><i class="bi bi-facebook me-2"></i>Facebook</a></li>
+                        <li class="mb-2"><a href="https://maps.app.goo.gl/PWmppuUv7nDqsrdz9" class="text-white-50 text-decoration-none"><i class="bi bi-geo-alt-fill me-2"></i>Ubicación</a></li>
+                    </ul>
+                </div>
 
-    <footer>
-        <section>
-            <h3>Cardoz</h3>
-            <p>Artesanos del pan desde hace generaciones. Comprometidos con el sabor real y los ingredientes nobles.</p>
-        </section>
-        
-        <section>
-            <h4>Navegación</h4>
-            <ul>
-                <li><a href="https://www.instagram.com/cardoz_cafe?igsh=ZTAxeHFvd2lwNjd4">Instagram</a></li>
-                <li><a href="https://www.facebook.com/PasteleriaCardoz/">Facebook</a></li>
-                <li><a href="https://maps.app.goo.gl/PWmppuUv7nDqsrdz9">Ubicación</a></li>
-            </ul>
-        </section>
-
-        <section>
-            <h4>Contacto</h4>
-            <p>Jr. Ayacucho 133</p>
-            <p>hola@cardozbakery.com</p>
-            <p>+51 900 123 456</p>
-        </section>
-        
-        <p>© 2026 Cardoz Artesanos</p>
+                <div class="col-md-4">
+                    <h5 class="fw-bold text-white mb-3">Contacto</h5>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-shop me-2"></i>Jr. Ayacucho 133, Huancayo</p>
+                    <p class="small text-white-50 mb-1"><i class="bi bi-envelope-at me-2"></i>eventos@cardozbakery.com</p>
+                    <p class="small text-white-50 mb-0"><i class="bi bi-telephone me-2"></i>+51 900 123 456</p>
+                </div>
+            </div>
+            
+            <div class="text-center pt-4 mt-4 border-top" style="border-color: rgba(255,255,255,0.1) !important;">
+                <p class="small text-white-50 mb-0">© 2026 Cardoz Pastelería Fina - Artesanos desde 2001</p>
+            </div>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
