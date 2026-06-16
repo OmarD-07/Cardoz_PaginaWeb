@@ -1,0 +1,39 @@
+/* =========================================
+   ESTILOS PERSONALIZADOS - CARDOZ
+   (Complemento a Bootstrap 5)
+========================================= */
+
+/* Comportamiento suave al hacer scroll en la página */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Efecto de elevación elegante para las tarjetas de productos */
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(111, 78, 55, 0.15) !important;
+}
+
+/* Transición suave para todos los botones personalizados */
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.02);
+}
+
+/* Enlaces del Footer */
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F4EBE1 !important;
+    text-decoration: underline !important;
+}
