@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             mensajeTexto += `\n*Total estimado: S/. ${total.toFixed(2)}*\n\n¿Me pueden confirmar disponibilidad?`;
 
-            // Enlace de WhatsApp (Coloca aquí tu número de Huancayo real)
+            // Enlace de WhatsApp 
             const numeroWhatsApp = "51900123456"; 
             const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(mensajeTexto)}`;
             
