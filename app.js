@@ -1,8 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // ==========================================
     // 1. LÓGICA DEL FORMULARIO DE CONTACTO 
-    // ==========================================
+
     const formulario = document.querySelector('form');
     
     if (formulario) {
@@ -31,9 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
     // 2. LÓGICA DE AGREGAR AL CARRITO (Catálogo)
-    // ==========================================
+
     // Seleccionamos todos los botones que tengan el atributo "data-nombre"
     const botonesAgregar = document.querySelectorAll('button[data-nombre]');
     
@@ -60,9 +57,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // ==========================================
     // 3. LÓGICA DE MOSTRAR EL CARRITO (compra.html)
-    // ==========================================
+
     const contenedorVacio = document.getElementById('carrito-vacio');
     const contenedorContenido = document.getElementById('carrito-con-contenido');
     const listaCarrito = document.getElementById('lista-carrito');
